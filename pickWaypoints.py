@@ -26,8 +26,10 @@ class LineBuilder:
         self.ys = np.array([])
         self.cid = self.ax.figure.canvas.mpl_connect('button_press_event', self)
         self.kpid = self.ax.figure.canvas.mpl_connect('key_press_event', self.keypress)
-        self.markers,=self.ax.plot(0,0,'rd')
-
+        self.markers,=self.ax.plot(0,0,'rd',picker=5)
+        self.edit = False
+        self.delete = False
+        self.editind=None
     def keypress(self,event):
         if event.inaxes!=self.ax: return
         print 'keypress', event.key
@@ -37,6 +39,58 @@ class LineBuilder:
                 self.xs=self.xs[:-1]
                 self.ys=self.ys[:-1]
                 self.plot()
+        if (event.key=='e'):
+            if not (self.edit):
+                print 'Edit!  Press e again to stop'
+                self.ax.figure.canvas.mpl_disconnect(self.cid)
+                self.cid = self.ax.figure.canvas.mpl_connect('pick_event', self.editpress)
+                self.cid2 = self.ax.figure.canvas.mpl_connect('motion_notify_event', self.editmove)
+                self.cid3 = self.ax.figure.canvas.mpl_connect('button_release_event', self.editrelease)
+                self.edit=True
+            else:
+                self.edit=False
+                self.ax.figure.canvas.mpl_disconnect(self.cid)
+                self.ax.figure.canvas.mpl_disconnect(self.cid2)
+                self.ax.figure.canvas.mpl_disconnect(self.cid3)
+                self.cid = self.ax.figure.canvas.mpl_connect('button_press_event', self)
+                print 'Done edit'
+        if (event.key=='d'):
+            if not (self.delete):
+                print 'Edit!  Press d again to stop'
+                self.ax.figure.canvas.mpl_disconnect(self.cid)
+                self.cid = self.ax.figure.canvas.mpl_connect('pick_event', self.deletepress)
+                self.delete=True
+            else:
+                self.delete=False
+                self.ax.figure.canvas.mpl_disconnect(self.cid)
+                self.cid = self.ax.figure.canvas.mpl_connect('button_press_event', self)
+                print 'Done edit'
+    def editpress(self,event):
+        print 'Boo'
+        print event.artist
+        print event.ind
+        self.editind=event.ind
+    def deletepress(self,event):
+        print 'Boo'
+        print event.artist
+        print event.ind
+        self.xs=np.delete(self.xs,event.ind)
+        self.ys=np.delete(self.ys,event.ind)
+        self.plot()
+        self.report()
+    def editmove(self,event):
+        if event.inaxes is None: return
+        if self.editind is None: return
+        x,y=event.xdata, event.ydata
+        self.xs[self.editind]=x
+        self.ys[self.editind]=y
+        self.plot()
+    def editrelease(self,event):
+        self.editind=None
+        self.plot()
+        self.report()
+
+        
 
     def plot(self):
         # remove old
@@ -51,7 +105,6 @@ class LineBuilder:
         #self.line=self.ax.plot(self.xs, self.ys,'m-')
         #self.markers=self.ax.plot(self.xs,self.ys,'d')
         self.ax.figure.canvas.draw()
-        self.report()
 
     def report(self):
         # make a chart of lat, lon, dist, time...
@@ -90,7 +143,7 @@ class LineBuilder:
         self.xs=np.append(self.xs,event.xdata)
         self.ys=np.append(self.ys,event.ydata)
         self.plot()
-
+        self.report()
 ax = plt.gca()
 def format_coord(x, y):
     return 'x=%.4f, y=%.4f'%(map(x, y, inverse = True))
