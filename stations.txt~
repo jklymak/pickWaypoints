@@ -1,0 +1,79 @@
+SOGNC-D  49 49.055   124 54.120   181m  Mooring
+SOGNW-D  49 47.972  124 56.115   84m  Mooring 
+SOGN2-C  49 50.153  124 52.227   331m  Mooring
+ChP1 50.346 125.431 344 CTD/net Johnstone Strait
+JS-7 50.473 126.167 338 CTD/net Johnstone Strait
+JS-1 50.522 126.640 440 CTD/net Johnstone Strait
+QS-2 50.750 127.167 182 CTD/net Queen Charlotte Strait
+QS-1 50.858 127.314 145 CTD/net Queen Charlotte Strait
+QS-3 50.954 127.756 346 CTD/net Queen Charlotte Strait
+CPEI 51.000 127.833 141? CTD/net Queen Charlotte Strait
+Dec-19 53.655 128.873 272 CTD Devastation Channel
+DeC23 53.600 128.829 166 CTD Devastation Channel
+DeC12 53.779 128.824 316 CTD Devastation Channel
+DeC17 53.713 128.810 316 CTD Devastation Channel
+DeC26 53.571 128.850 160 CTD Devastation Channel
+DEV1-A 53.577 128.854 160 Rosette/Nets/Filtrations/Hyper Devastation Channel
+CA-D1 52.896 129.535 320 CTD Caamano Sound
+CAM1 52.781 129.500 425 CTD Caamano Sound
+CAM2 52.917 129.258 235 CTD Caamano Sound
+CMP1 53.008 129.258 364 CTD Caamano Sound
+CS84 52.900 129.399 252 Rosette/Hyperpro/Filtration Caamano Sound
+CS89 52.898 129.546 311 CTD Caamano Sound
+Doug11 53.830 128.822 317 Rosette/Hyperpro/Filtration Douglas Channel
+Doug16 53.778 128.912 386 Rosette Douglas Channel
+Doug26 53.674 129.122 400 Rosette Douglas Channel
+Doug29 53.636 129.190 247 CTD Douglas Channel
+Doug31 53.611 129.213 300 Rosette/ADCP transects Douglas Channel
+Doug32 (sill) 53.593 129.212 243 CTD Douglas Channel
+Doug35 53.537 129.204 329 CTD Douglas Channel
+Doug4 53.927 128.704 220 Rosette/Nets/Filtrations/Hyperpro Douglas Channel
+Doug40 53.446 129.209 398 Rosette Douglas Channel
+Doug45 53.370 129.195 220 Rosette Douglas Channel
+ES72 53.095 129.561 177 CTD Estevan Sound
+ES80 53.011 129.481 121 CTD Estevan Sound
+FOC1-B 53.736 129.030 367 Rosette Douglas Channel
+FR53 53.303 128.896 420 Rosette/Nets/Filtrations/Hyperpro Fraser Reach
+FR56 53.282 128.875 461 CTD Fraser Reach
+GC31 53.525 128.725 205 Rosette Gardiner Canal
+GC38 53.450 128.600 240 Rosette/Nets/Filtrations/Hyperpro Gardiner Canal
+GC44 53.432 128.449 408 Rosette/Filtrations Gardiner Canal
+GC48 53.535 128.788 200 CTD Gardiner Canal
+GC51 53.472 128.314 497 Rosette/Filtrations Gardiner Canal
+GC60 53.428 128.090 266 CTD Gardiner Canal
+GC68 53.344 127.993 227 CTD Gardiner Canal
+GC74 53.263 127.924 139 Rosette/Filtrations Gardiner Canal
+H-Deep 52.743 129.904 260 CTD Hecate Strait
+HEC1-B 52.821 129.846 137 Rosette Hecate Strait
+KSK1-B 53.480 129.209 370 Rosette/Nets/Filtrations/Hyperpro Douglas Channel
+mHEC1-C 52.819 129.846 137 CTD/Recover Mooring Hecate Strait
+MR53 53.305 129.070 437 CTD Mackay Reach
+MR55 53.321 129.021 480 CTD Mackay Reach
+MR58 53.301 128.951 484 CTD Mackay Reach
+OC66 53.200 129.557 306 CTD Otter Channel
+PC73 53.271 129.717 179 CTD Principe Channel
+SC58 53.276 129.426 530 CTD Scually Channel
+SC61 53.200 129.418 512 Rosette Scually Channel
+SC69 53.080 129.326 692 Rosette/Nets/Filtrations/Hyperpro Scually Channel
+SC74 53.011 129.263 376 Rosette Scually Channel
+UC31 53.537 128.996 41 CTD Ursula Channel
+UC43 53.484 128.978 105 CTD Ursula Channel
+UC45 53.434 128.925 387 CTD Ursula Channel
+UC50 53.352 128.906 469 CTD Ursula Channel
+UC52 53.318 128.911 510 CTD Ursula Channel
+VP39 53.507 129.064 118 CTD Verney Passage
+VP43 53.415 129.115 316 CTD Verney Passage
+VP26 53.547 128.887 209 CTD Verney Passage
+WC43 53.351 129.274 515 CTD Whale Channel
+WC50 53.297 129.148 516 CTD Whale Channel
+WC58 53.222 129.121 496 CTD Whale Channel
+WHA3 53.139 129.121 545 CTD Whale Channel
+WHA9 53.310 129.183 472 CTD Whale Channel
+LS82 52.876 129.229 192 CTD Laredo Sound
+LS85 52.869 129.186 97 CTD Laredo Sound
+LS89 52.777 129.139 201 CTD Laredo Sound
+LS93 52.726 129.062 267 CTD Laredo Sound
+LS95 52.702 129.023 274 CTD Laredo Sound
+LS97 52.680 128.970 179 CTD Laredo Sound
+LS100 52.644 128.920 157 CTD Laredo Sound
+LS102 52.626 128.883 201 CTD Laredo Sound
