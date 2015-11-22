@@ -33,7 +33,7 @@ def plotTopo(fig):
     map.drawmeridians(meridians,labels=[True,False,False,True])
     # add moorings
     dtype={'names': ('name', 'lat', 'lon'),'formats': ('S12', 'f4', 'f4')}
-    moor = np.loadtxt('../Worldclass_MooringsonlyWPsOct21.txt',delimiter=',',dtype=dtype)
+    moor = np.loadtxt('./Worldclass_MooringsonlyWPsOct21.txt',delimiter=',',dtype=dtype)
     plt.colorbar(im,shrink=0.5)
     for m in  moor:
         map.plot(m[2],m[1],'yd',latlon=True)
